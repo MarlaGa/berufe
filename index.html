@@ -4,9 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zufälliges Wort</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        #random-word {
+            font-size: 2em;
+            color: #333;
+        }
+    </style>
     <script>
         function getRandomWord() {
-            const words = ["Erinnerungsarchitekt", "Wutradler", "Beruf", "Klimaaktivist", "Zweisamkeitsplaner", "Medienethiker", "Maschinenpflege", "KI-Sitter"];
+            const words = ["ErinnerungsarchitektIn", "WutradlerIn", "MaschinenpflegerIn", "KI-SitterIn", "ZweisamkeitsplanerIn"]; // Ersetze diese Wörter durch deine gewünschten Wörter
             const randomIndex = Math.floor(Math.random() * words.length);
             return words[randomIndex];
         }
@@ -17,6 +32,6 @@
     </script>
 </head>
 <body>
-    <h1 id="random-word">Lade...</h1>
+    <div id="random-word">Lade...</div>
 </body>
 </html>

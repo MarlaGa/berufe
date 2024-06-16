@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zufälliges Wort</title>
+    <script>
+        function getRandomWord() {
+            const words = ["Erinnerungsarchitekt", "Wutradler", "Beruf", "Klimaaktivist", "Zweisamkeitsplaner", "Medienethiker", "Maschinenpflege", "KI-Sitter"];
+            const randomIndex = Math.floor(Math.random() * words.length);
+            return words[randomIndex];
+        }
+
+        window.onload = function() {
+            document.getElementById("random-word").textContent = getRandomWord();
+        }
+    </script>
+</head>
+<body>
+    <h1 id="random-word">Lade...</h1>
+</body>
+</html>

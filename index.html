@@ -33,12 +33,15 @@
         @media (max-width: 600px) {
             #content {
                 word-break: break-word;
+                 font-size: 1.5em;
             }
             #word {
                 word-break: break-word;
+                 font-size: 1.5em;
             }
             #sentence1, #sentence2 {
                 word-break: break-word;
+                 font-size: 1em;
             }
         }
     </style>
@@ -47,29 +50,45 @@
             const content = [
                 {
                     word: "ErinnerungsarchitektIn",
-                    sentence1: "Dies ist der erste Satz für Wort1Dies ist der erste Satz für Wort1.",
-                    sentence2: "Dies ist der zweite Satz für Wort1."
+                    sentence1: "Gestalten und Kuratieren Sie individuelle und gemeinschaftliche Erinnerungen.",
+                    sentence2: "Dadurch ermöglichen Sie das kulturelle und emotionale Erbe für zukünftige Generationen zu bewahren."
+."
                 },
                 {
-                    word: "Wort2",
-                    sentence1: "Dies ist der erste Satz für Wort2.",
-                    sentence2: "Dies ist der zweite Satz für Wort2."
+                    word: "WutradlerIn",
+                    sentence1: "Auch mal wieder an jeder Kreuzung von einem Auto geschnitten, mit einem Porsche, der breit auf dem Fahrradweg parkt, fast kollidiert?",
+                    sentence2: "Lassen Sie jetzt ihre Wut auf die autozentrierte Politik raus."
                 },
                 {
-                    word: "Wort3",
-                    sentence1: "Dies ist der erste Satz für Wort3.",
-                    sentence2: "Dies ist der zweite Satz für Wort3."
+                    word: "KI-SitterIn",
+                    sentence1: "Kümmern Sie sich um überholte KIs.",
+                    sentence2: "Stellen Sie Fragen, deren Antworten Sie schon kennen oder schütten Sie ihren Liebeskummer aus."
                 },
                 {
-                    word: "Wort4",
-                    sentence1: "Dies ist der erste Satz für Wort4.",
-                    sentence2: "Dies ist der zweite Satz für Wort4."
+                    word: "EinsamkeitsbegleiterIn",
+                    sentence1: "Gesellen Sie sich zu einer einsamen Person.",
+                    sentence2: "Bringen Sie ein offenes Ohr und aufbrausende Geschichten mit, eventuell auch eine Schulter zum anlehnen."
                 },
                 {
-                    word: "Wort5",
-                    sentence1: "Dies ist der erste Satz für Wort5.",
-                    sentence2: "Dies ist der zweite Satz für Wort5."
-                }
+                    word: "MaschinenunterhalterIn",
+                    sentence1: "Beschäftigen Sie sich mit ausrangierten Industrierobotern.",
+                    sentence2: "Lassen Sie sich auf aktive Bewegungen und performative Stunden ein."
+                },
+                {
+                    word: "ProtestlerIn",
+                    sentence1: "Organisieren Sie einen spontanen Protest.",
+                    sentence2: "Laden Sie Freunde ein und suchen Sie sich ein Thema, protestiert werden muss an jeder Stelle."
+                },
+                {
+                    word: "Social-Media EntschuldigerIn",
+                    sentence1: "Überpüfen Sie die Social Media Verhalten von Personen, lesen Sie die Kommentare und Beiträge.",
+                    sentence2: "Verfassen und Posten Sie bei politisch unkorrekten Fehltritten öffentliche Entschuldigungen."
+                },
+                {
+                    word: "AntiassismusverteidigerIn",
+                    sentence1: "Begeben Sie sich an öffentliche Orte, wie Verkehrsmittel, Supermärkte etc.",
+                    sentence2: "Beobachten Sie das Verhalten von Menschen, Reaktionen, Gespräche und unterstützen Sie die von Rassismus betroffene Person."
+                },
             ];
             const randomIndex = Math.floor(Math.random() * content.length);
             return content[randomIndex];

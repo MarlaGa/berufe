@@ -15,34 +15,24 @@
             font-family: 'Roboto', sans-serif;
             background-color: #f0f0f0;
             text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
         }
         #content {
             font-size: 1.5em;
             color: red;
-            padding: 20px;
+            width: 100%;
         }
         #word {
             font-size: 2em;
             font-weight: bold;
             margin-bottom: 10px;
+            word-break: break-word;
         }
         #sentence1, #sentence2 {
             font-size: 1em;
             color: black;
-        }
-        @media (max-width: 600px) {
-            #content {
-                word-break: break-word;
-                 font-size: 1.5em;
-            }
-            #word {
-                word-break: break-word;
-                 font-size: 1.5em;
-            }
-            #sentence1, #sentence2 {
-                word-break: break-word;
-                 font-size: 1em;
-            }
+            word-break: break-word;
         }
     </style>
     <script>

@@ -6,33 +6,76 @@
     <title>Zufälliges Wort</title>
     <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body {
+      body {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             background-color: #f0f0f0;
+            text-align: center;
         }
-        #random-word {
-            font-size: 2em;
+        #content {
+            font-size: 1.5em;
             color: red;
+        }
+        #word {
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        #sentence1, #sentence2 {
+            font-size: 1em;
+            color: black;
         }
     </style>
     <script>
-        function getRandomWord() {
-            const words = ["ErinnerungsarchitektIn", "WutradlerIn", "MaschinenpflegerIn", "KI-SitterIn", "ZweisamkeitsplanerIn"]; // Ersetze diese Wörter durch deine gewünschten Wörter
-            const randomIndex = Math.floor(Math.random() * words.length);
-            return words[randomIndex];
+        function getRandomContent() {
+            const content = [
+                {
+                    word: "Wort1",
+                    sentence1: "Dies ist der erste Satz für Wort1.",
+                    sentence2: "Dies ist der zweite Satz für Wort1."
+                },
+                {
+                    word: "Wort2",
+                    sentence1: "Dies ist der erste Satz für Wort2.",
+                    sentence2: "Dies ist der zweite Satz für Wort2."
+                },
+                {
+                    word: "Wort3",
+                    sentence1: "Dies ist der erste Satz für Wort3.",
+                    sentence2: "Dies ist der zweite Satz für Wort3."
+                },
+                {
+                    word: "Wort4",
+                    sentence1: "Dies ist der erste Satz für Wort4.",
+                    sentence2: "Dies ist der zweite Satz für Wort4."
+                },
+                {
+                    word: "Wort5",
+                    sentence1: "Dies ist der erste Satz für Wort5.",
+                    sentence2: "Dies ist der zweite Satz für Wort5."
+                }
+            ];
+            const randomIndex = Math.floor(Math.random() * content.length);
+            return content[randomIndex];
         }
 
         window.onload = function() {
-            document.getElementById("random-word").textContent = getRandomWord();
+            const randomContent = getRandomContent();
+            document.getElementById("word").textContent = randomContent.word;
+            document.getElementById("sentence1").textContent = randomContent.sentence1;
+            document.getElementById("sentence2").textContent = randomContent.sentence2;
         }
     </script>
 </head>
 <body>
-    <div id="random-word">Lade...</div>
+    <div id="content">
+        <div id="word">Lade...</div>
+        <div id="sentence1"></div>
+        <div id="sentence2"></div>
+    </div>
 </body>
 </html>
